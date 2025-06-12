@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+logs
+node_modules
+dist
+npm-debug.log
+package-lock.json
+
+# Exclude IDE project folders
+.happypack
+.idea
+.vscode
+.project
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,46 @@
+{
+  "name": "decoration-basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:client:mobile": "cross-env MODE=development webpack-dev-server --progress --config webpack.config.js",
+    "pro:client:mobile": "cross-env MODE=development webpack --progress --config webpack.config.js",
+    "dev:server": "cross-env NODE_ENV=development nodemon -w ./src/server --exec babel-node --inspect ./src/server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@koa/router": "^13.1.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.9.0",
+    "chalk": "^4.1.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
+    "koa": "^3.0.0",
+    "koa-bodyparser": "^4.4.1",
+    "koa-compress": "^5.1.1",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.9.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.6.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/node": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "nodemon": "^3.1.10",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-manifest-plugin": "^5.0.1"
+  }
+}
